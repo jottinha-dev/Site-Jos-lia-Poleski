@@ -1,0 +1,11 @@
+COMO EDITAR O SITE
+
+1. Textos, avaliações, endereço e links de redes sociais: index.html
+   (procure os comentários EDITAR e o início de cada seção <!-- ===== ... ===== -->)
+2. Cores e fontes: css/style.css, bloco ":root" no topo
+3. WhatsApp, mensagem padrão e link de agenda online: js/config.js
+4. Fotos: substitua os arquivos da pasta images/ mantendo o mesmo nome
+   (logo.webp, hero.webp, sala.webp, estante.webp, acolhimento.webp, infantil.webp)
+
+Para publicar, envie toda a pasta para a hospedagem (index.html na raiz).
+As fontes vêm do Google Fonts e precisam de internet.

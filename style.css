@@ -1,0 +1,142 @@
+/* ==========================================================
+   Josélia Poleski | Psicologia Clínica – estilos
+   ÍNDICE: 1 Cores e tipografia · 2 Base · 3 Botões · 4 Cabeçalho
+           5 Hero · 6 Atuação · 7 Sobre · 8 Consultório · 9 Avaliações
+           10 Agendamento · 11 Localização · 12 Rodapé · 13 Responsivo
+   ========================================================== */
+/* ===== 1. CORES (extraídas do logo) E FONTES – edite aqui ===== */
+:root{
+  --cream:#F8F6EF; --paper:#FFFFFF; --rose-soft:#F0E8E2; --mist-soft:#E6E9EA;
+  --slate:#484D56; --slate-deep:#2F333A; --night:#0A0D12;
+  --gold:#A8863F; --gold-dark:#86692A; --mist:#868C90; --rose:#B9A398;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost','Segoe UI',system-ui,sans-serif;
+}
+/* ===== 2. BASE ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);font-weight:400;font-size:1.05rem;line-height:1.7;color:var(--slate);background:var(--cream)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--slate-deep)}
+h2{font-size:clamp(2rem,4.5vw,3.1rem);margin-bottom:1rem}
+h3{font-size:1.7rem}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7rem) 0}
+.lead{max-width:56ch;font-size:1.15rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* ===== 3. BOTÕES ===== */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.7rem;border-radius:999px;font-weight:500;font-size:1rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
+.btn svg{width:1.2em;height:1.2em;fill:currentColor}
+.btn-primary{background:var(--gold-dark);color:#fff}
+.btn-primary:hover{background:var(--slate-deep)}
+.btn-ghost{border-color:var(--slate);color:var(--slate-deep)}
+.btn-ghost:hover{background:var(--slate-deep);color:var(--cream)}
+.btn-light{background:var(--cream);color:var(--slate-deep)}
+.btn-light:hover{background:var(--rose)}
+
+/* ===== 4. CABEÇALHO ===== */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(248,246,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(72,77,86,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.brand img{width:50px;height:50px;border-radius:50%}
+.brand b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:600;line-height:1.1}
+.brand small{display:block;font-size:.8rem;letter-spacing:.14em;color:var(--mist)}
+.menu{display:flex;align-items:center;gap:1.8rem;list-style:none}
+.menu a{text-decoration:none;font-size:.98rem}
+.menu a:not(.btn):hover{color:var(--gold-dark)}
+.menu .btn{padding:.6rem 1.3rem;color:#fff}
+.burger{display:none;background:none;border:0;padding:.6rem;cursor:pointer;color:var(--slate-deep)}
+.burger svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round}
+
+/* ===== 5. HERO ===== */
+.hero{padding-block:clamp(2.5rem,6vw,5rem);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.6vw,5.2rem);margin-bottom:1.3rem;letter-spacing:-.01em}
+.hero p{max-width:46ch;font-size:1.2rem;margin-bottom:2rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2rem}
+.rating-chip{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-size:.95rem}
+.stars{color:var(--gold);letter-spacing:.12em;font-size:1.1rem}
+.hero-art{position:relative}
+.hero-art::before{content:"";position:absolute;inset:-6% -14% -6% 8%;border-radius:50%;background:var(--rose-soft)}
+.hero-art .photo{position:relative;aspect-ratio:4/5;border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(47,51,58,.45)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:38% center}
+.bf{position:absolute;width:56px;height:56px;fill:currentColor;stroke:currentColor;animation:flutter 7s ease-in-out infinite}
+.bf.a{color:var(--mist);top:-4%;left:-4%}
+.bf.b{color:var(--rose);width:42px;height:42px;bottom:14%;right:-6%;animation-delay:-3s}
+@keyframes flutter{50%{transform:translateY(-10px) rotate(6deg)}}
+
+/* ===== 6. ATUAÇÃO ===== */
+.areas{background:var(--paper)}
+.areas-head{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;margin-bottom:3rem;align-items:end}
+.area{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;padding:1.8rem 0;border-top:1px solid var(--gold)}
+.area:last-child{border-bottom:1px solid var(--gold)}
+
+/* ===== 7. SOBRE ===== */
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.about .photo{aspect-ratio:3/4;border-radius:28px 28px 999px 999px;box-shadow:0 30px 60px -30px rgba(47,51,58,.4)}
+.about p+p{margin-top:1rem}
+.pillars{list-style:none;margin-top:2rem;display:grid;gap:.9rem}
+.pillars li{padding-left:1.4rem;position:relative}
+.pillars li::before{content:"";position:absolute;left:0;top:.7em;width:.55rem;height:.55rem;border-radius:50%;background:var(--gold)}
+.pillars b{font-weight:500;color:var(--slate-deep)}
+
+/* ===== 8. CONSULTÓRIO ===== */
+.space{background:var(--mist-soft)}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin-top:2.5rem}
+.gallery figure{position:relative;border-radius:18px;overflow:hidden;min-height:240px}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem 1.2rem .9rem;color:#fff;font-size:.95rem;background:linear-gradient(transparent,rgba(10,13,18,.65))}
+.g1{grid-column:1/8;aspect-ratio:3/2}
+.g2{grid-column:8/13;grid-row:1/3}
+.g3{grid-column:1/8;aspect-ratio:3/2}
+
+/* ===== 9. AVALIAÇÕES ===== */
+.rating-head{display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem 3rem;margin-bottom:2.5rem}
+.score{font-family:var(--serif);font-size:4.6rem;line-height:1;color:var(--slate-deep)}
+.reviews{columns:3 290px;column-gap:1.3rem}
+.review{break-inside:avoid;background:var(--paper);border-radius:18px;padding:1.5rem;margin-bottom:1.3rem;border:1px solid rgba(72,77,86,.1)}
+.review p{margin:.7rem 0 1rem}
+.review footer{font-size:.9rem;color:var(--mist);line-height:1.4}
+.review footer a{font-weight:500;color:var(--slate-deep);text-decoration:none}
+
+/* ===== 10. AGENDAMENTO ===== */
+.book{background:var(--slate-deep);color:var(--cream)}
+.book h2{color:var(--cream)}
+.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.book .lead{margin-bottom:1.8rem}
+form{display:grid;gap:1rem;background:rgba(248,246,239,.07);padding:clamp(1.4rem,3vw,2.2rem);border-radius:22px}
+label{display:grid;gap:.35rem;font-size:.95rem}
+input,select,textarea{font:inherit;color:var(--slate-deep);background:var(--cream);border:1.5px solid transparent;border-radius:12px;padding:.8rem 1rem;width:100%}
+textarea{min-height:100px;resize:vertical}
+
+/* ===== 11. LOCALIZAÇÃO ===== */
+.location .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:stretch}
+.info{list-style:none;margin:1.6rem 0 2rem;display:grid;gap:1.1rem}
+.info b{display:block;font-weight:500;color:var(--slate-deep)}
+.info a{text-decoration:none;border-bottom:1px solid var(--gold)}
+.map{min-height:380px;border-radius:22px;overflow:hidden;border:1px solid rgba(72,77,86,.15)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* ===== 12. RODAPÉ ===== */
+footer.site-footer{background:var(--night);color:var(--cream);padding:3.5rem 0 2rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:2rem}
+.foot .brand b{color:var(--cream)}
+.social{display:flex;gap:.8rem;list-style:none}
+.social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid var(--rose);transition:background .2s}
+.social a:hover{background:var(--gold-dark)}
+.social svg{width:22px;height:22px;fill:currentColor}
+.copy{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(248,246,239,.15);font-size:.85rem;color:var(--rose)}
+
+/* ===== 13. RESPONSIVO ===== */
+@media (max-width:860px){
+  .burger{display:block}
+  .menu{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:1.1rem;padding:1.5rem 1.25rem 2rem;background:var(--cream);border-bottom:1px solid rgba(72,77,86,.15)}
+  .menu.open{display:flex}
+  .hero .wrap,.areas-head,.area,.about .wrap,.book .wrap,.location .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin:0 auto;width:100%}
+  .about .photo{max-width:380px}
+  .area{gap:.6rem}
+  .g1,.g2,.g3{grid-column:1/-1;grid-row:auto;aspect-ratio:3/2}
+}
+@media (prefers-reduced-motion:reduce){.bf{animation:none}html{scroll-behavior:auto}}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josélia Poleski | Psicologia Clínica em Santos</title>
+<meta name="description" content="Psicologia clínica para infância, adolescência e famílias. Orientação parental e terapia de casal em Santos, SP.">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  ESTRUTURA DO PROJETO
+  index.html       → conteúdo e textos (este arquivo)
+  css/style.css    → cores, fontes e layout
+  js/config.js     → WhatsApp, mensagem e link de agendamento
+  js/main.js       → menu mobile e formulário
+  images/          → fotos e logo (troque mantendo o mesmo nome)
+-->
+
+<!-- Símbolo de borboleta reutilizado no hero -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="butterfly" viewBox="0 0 40 40">
+    <path d="M20 19C15 6 4 3 4 12c0 7 8 10 16 7zM20 19c5-13 16-16 16-7 0 7-8 10-16 7zM20 21c-7 3-12 8-9 13 3 4 8-3 9-13zM20 21c7 3 12 8 9 13-3 4-8-3-9-13z" stroke="none"/>
+    <path d="M20 19c-1-5-3-8-5-10M20 19c1-5 3-8 5-10" fill="none" stroke-width="1"/>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Josélia Poleski, Psicologia Clínica">
+      <img src="images/logo.webp" alt="Logo Josélia Poleski com letras JP e borboletas" width="50" height="50">
+      <span><b>Josélia Poleski</b><small>PSICOLOGIA CLÍNICA</small></span>
+    </a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 28 28"><path d="M4 8h20M4 14h20M4 20h20"/></svg>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#atuacao">Atuação</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#consultorio">Consultório</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+      <li><a class="btn btn-primary js-book" href="#agendar" target="_blank" rel="noopener">Agendar consulta</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Ajudando famílias a reconstruir vínculos</h1>
+      <p>Psicologia clínica para crianças, adolescentes, famílias e casais, com orientação parental, em Santos.</p>
+      <div class="actions">
+        <a class="btn btn-primary js-book" href="#agendar" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Agendar consulta
+        </a>
+        <a class="btn btn-ghost" href="#consultorio">Conhecer o consultório</a>
+      </div>
+      <a class="rating-chip" href="#avaliacoes">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><b>5,0</b> · 55 avaliações no Google</span>
+      </a>
+    </div>
+    <div class="hero-art">
+      <div class="photo"><img src="images/hero.webp" alt="Psicóloga Josélia Poleski sorrindo, sentada à mesa do consultório" width="680" height="453" fetchpriority="high"></div>
+      <svg class="bf a" aria-hidden="true"><use href="#butterfly"/></svg>
+      <svg class="bf b" aria-hidden="true"><use href="#butterfly"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATUAÇÃO ===== -->
+<section class="areas" id="atuacao">
+  <div class="wrap">
+    <div class="areas-head">
+      <h2>Cada fase da vida pede um cuidado diferente</h2>
+      <p class="lead">O atendimento é adaptado a quem chega: a criança que precisa brincar, o adolescente que precisa ser ouvido, os pais que buscam orientação e o casal que quer se reencontrar.</p>
+    </div>
+    <div class="area"><h3>Infância</h3><p>Atendimento com brincadeiras, em uma sala preparada para a criança expressar emoções e aprender a lidar com elas.</p></div>
+    <div class="area"><h3>Adolescência</h3><p>Um espaço de escuta para falar das mudanças, das relações e da construção de quem se é.</p></div>
+    <div class="area"><h3>Famílias</h3><p>Apoio para que pais, filhos e responsáveis se entendam melhor e atravessem momentos delicados juntos.</p></div>
+    <div class="area"><h3>Orientação parental</h3><p>Orientação para entender o comportamento dos filhos e fortalecer a convivência em casa.</p></div>
+    <div class="area"><h3>Terapia de casal</h3><p>Conversas guiadas para melhorar a comunicação e cuidar do vínculo entre o casal.</p></div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="photo"><img src="images/acolhimento.webp" alt="Josélia Poleski acolhendo uma paciente no consultório" width="340" height="510" loading="lazy"></div>
+    <div>
+      <h2>Sobre Josélia Poleski</h2>
+      <p class="lead">Psicóloga clínica em Santos, com atendimento voltado a crianças, adolescentes, famílias e casais.</p>
+      <p>Acredito que a mudança começa quando a pessoa se sente segura para falar e brincar do seu jeito. Por isso, cada atendimento é pensado com atenção ao paciente e à família que o acompanha.</p>
+      <!-- EDITAR: acrescente aqui formação, CRP, especializações e abordagem terapêutica. -->
+      <ul class="pillars">
+        <li><b>Escuta acolhedora.</b> Um olhar sensível para cada história.</li>
+        <li><b>Família envolvida.</b> Acompanhamento da evolução do paciente e de quem cuida dele.</li>
+        <li><b>Ambiente preparado.</b> Consultório confortável, com espaço próprio para crianças.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONSULTÓRIO ===== -->
+<section class="space" id="consultorio">
+  <div class="wrap">
+    <h2>Um consultório pensado para acolher</h2>
+    <p class="lead">Cores suaves, luz aconchegante e uma sala de brincar para os pequenos.</p>
+    <div class="gallery">
+      <figure class="g1"><img src="images/sala.webp" alt="Sala de atendimento com sofá claro, quadros coloridos e mesa" loading="lazy"><figcaption>Sala de atendimento</figcaption></figure>
+      <figure class="g2"><img src="images/estante.webp" alt="Estante branca com iluminação quente e mesa de trabalho" loading="lazy"><figcaption>Recepção e mesa de trabalho</figcaption></figure>
+      <figure class="g3"><img src="images/infantil.webp" alt="Josélia brincando com uma criança no tapete da sala infantil" loading="lazy"><figcaption>Sala de brincar</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AVALIAÇÕES ===== -->
+<section id="avaliacoes">
+  <div class="wrap">
+    <h2>O que dizem as famílias</h2>
+    <div class="rating-head">
+      <div class="score">5,0</div>
+      <div>
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <a href="https://www.google.com/search?q=joselia+poleski+psicologia" target="_blank" rel="noopener">55 avaliações no Google</a>
+      </div>
+    </div>
+    <div class="reviews">
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Minha filha de 8 anos gosta muito da psicóloga que a atende. Fica esperando a semana toda para ter o momento dela. Eu vi muita melhora na minha filha. Consultório bem localizado.</p><footer><a href="https://www.google.com/maps/contrib/116476368328854772946/reviews?hl=pt-BR" target="_blank" rel="noopener">Caroline Adania Bittencourt</a><br>Local Guide · 7 meses atrás</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Josélia é uma profissional muito acolhedora, experiente e que auxiliou demais a minha família em um momento delicado. Só tenho a agradecer por ter encontrado essa pessoa com um olhar tão sensível e amoroso.</p><footer><a href="https://www.google.com/maps/contrib/111391086026201675901/reviews?hl=pt-BR" target="_blank" rel="noopener">Nayara Neves</a><br>2 meses atrás (editado)</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Profissional extremamente responsável, comprometida e gentil. Recomendo sim.</p><footer><a href="https://www.google.com/maps/contrib/104110186974257164706/reviews?hl=pt-BR" target="_blank" rel="noopener">Antonio Jorge Santos</a><br>Local Guide · 11 meses atrás</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Profissional muito atenciosa. Gostei muito do consultório.</p><footer><a href="https://www.google.com/maps/contrib/103423520947277176537/reviews?hl=pt-BR" target="_blank" rel="noopener">Fernanda Domingues</a><br>6 meses atrás</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Sem palavras para essa profissional! Gratidão por todo cuidado que teve com minha menina e, hoje, comigo. Maravilhosa demais!</p><footer><a href="https://www.google.com/maps/contrib/100310288629926793495/reviews?hl=pt-BR" target="_blank" rel="noopener">Flavinha</a><br>11 meses atrás</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Profissional maravilhosa! Paciente e amorosa. Sinto que você me ajudou a entender e aceitar as minhas diferenças, o que reduziu minha ansiedade. Obrigada por fazer parte de nossas vidas. 🥰</p><footer><a href="https://www.google.com/maps/contrib/111059651435247256447/reviews?hl=pt-BR" target="_blank" rel="noopener">Carla Cravo</a><br>Local Guide · 11 meses atrás</footer></article>
+      <article class="review"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Excelente profissional, muito dedicada e preocupada com a evolução do paciente e família. Tem uma excelente estrutura física no consultório.</p><footer><a href="https://www.google.com/maps/contrib/115078982996951661464/reviews?hl=pt-BR" target="_blank" rel="noopener">Bruno Uvinha</a><br>7 meses atrás</footer></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDAMENTO ===== -->
+<section class="book" id="agendar">
+  <div class="wrap">
+    <div>
+      <h2>Agende sua consulta</h2>
+      <p class="lead">Conte quem será atendido e envie a mensagem pelo WhatsApp. Você recebe os horários disponíveis e as orientações para o primeiro atendimento.</p>
+      <a class="btn btn-light js-book" href="#agendar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+    </div>
+    <form id="bookForm">
+      <label>Seu nome<input name="nome" required autocomplete="name"></label>
+      <label>Quem será atendido?
+        <select name="quem" required>
+          <option value="">Selecione</option>
+          <option>Criança</option><option>Adolescente</option><option>Família</option>
+          <option>Orientação parental</option><option>Casal</option>
+        </select>
+      </label>
+      <label>Mensagem (opcional)<textarea name="msg"></textarea></label>
+      <button class="btn btn-light" type="submit">Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== LOCALIZAÇÃO ===== -->
+<section class="location" id="localizacao">
+  <div class="wrap">
+    <div>
+      <h2>Como chegar</h2>
+      <ul class="info">
+        <li><b>Endereço</b>The Blue Office<br>Av. Senador Feijó, 686, Sala 1909<br>Vila Mathias, Santos, SP, 11015-504</li>
+        <li><b>Telefone e WhatsApp</b><a href="tel:+5513996901801">(13) 99690-1801</a></li>
+        <li><b>Horário</b>Atendimento com hora marcada, até as 19h <!-- EDITAR: horários por dia --></li>
+      </ul>
+      <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Av.+Senador+Feij%C3%B3,+686,+Santos+SP" target="_blank" rel="noopener">Abrir no Google Maps</a>
+    </div>
+    <div class="map">
+      <iframe title="Mapa do consultório em Santos" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Senador+Feij%C3%B3,+686,+Santos,+SP&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><img src="images/logo.webp" alt="" width="50" height="50"><span><b>Josélia Poleski</b><small>PSICOLOGIA CLÍNICA</small></span></div>
+      <ul class="social">
+        <li><a href="https://www.instagram.com/joseliapoleskipsicologa" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a></li>
+        <li><a class="js-book" href="#agendar" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a></li>
+        <li><a href="https://www.google.com/search?q=joselia+poleski+psicologia" target="_blank" rel="noopener" aria-label="Avaliações no Google"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="ano"></span> Josélia Poleski Psicologia Clínica · Santos, SP <!-- EDITAR: adicionar nº do CRP --></p>
+  </div>
+</footer>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.3 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zM8.6 7.5c-.2 0-.5 0-.7.4-.3.4-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.7-.4l-1.9-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zM17.3 5.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.3 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+</svg>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
